@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.block {
+  width: 50%;
+  height: 200px;
+  padding: 0px 5%;
+  background-color: red;
+  border: 2px solid;
+}
+
+.block2 {
+  padding: 0px 5%;
+  background-color: red;
+  border: 2px solid;
+}

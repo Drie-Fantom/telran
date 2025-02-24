@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.block{
+    border: 2px solid #000;
+    // background-color: red;
+    // background-color: rgb(86, 176, 218);
+    background-color: rgba(86, 176, 218, 0.5);
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+        background-color: red;
+        border: 2px solid blue;
+        width: 100px;
+        height: 100px;
+        font-style: 50px;
+    }
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Потомки */
+/* selector1 selector2{
+    ...
+} */
+/* Непосредственно вложенные */
+/* selector1 > selector2{
+    ...
+} */
+/* Пример .table1 */
+/* Потомки .table1 - > thead, tbody, tr, th, td
+Непосредственно вложенные .table1 - > head, tbody */
+.table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border: 1px solid;
+  padding: 5px;
+}
+.table__def {
+  font-weight: 400;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+// #ssds{
+//     font-size: 200px;
+// }
+// p{
+//     font-size: 16px;
+// }
+// .p{
+//     font-size: 22px;
+// }
+// .block1{
+//     border: 5px solid red;
+//     padding: 10px;
+//     width: 400px;
+//     height: 400px;
+//     margin-bottom: 30px;
+// }
+// .block2{
+//     border: 5px solid blue;
+//     padding: 10px;
+//     width: 400px;
+//     height: 400px;
+//     box-sizing: border-box;
+// }
+// .container1{
+//     /* margin: 20px 40px 0px 80px; */
+//     /* margin-top: 30px;
+//     margin-bottom: 20px;
+//     margin-left: ;
+//     margin-right: ; */
+//     border: 1px solid black;
+//     /* border-left: ;
+//     border-right: ;
+//     border-top: ;
+//     border-bottom: ; */
+//     /* border-width: ;
+//     border-style: ;
+//     border-color: ;
+//      */
+//      /* border-left-width: ;
+//      border-right-color: ; */ 
+// }
+// .table1{
+//     margin-left: 10px;
+//     margin-top: 10px;
+//     border: 1px solid black;
+//     border-collapse: collapse;
+// }
+// .table1 th, .table1 td{
+//     border: 1px solid black;
+// }
+// .table2{
+//     margin-left: 10px;
+//     margin-top: 10px;
+//     border: 1px solid black;
+//     border-collapse: collapse;
+// }
+// .table2 th, .table2 td{
+//     border: 1px solid black;
+// }
+/* Потомки */
+/* selector1 selector2{
+    ...
+} */
+
+/* Непосредственно вложенные */
+/* selector1 > selector2{
+    ...
+} */
+/* Пример .table1 */
+/* Потомки .table1 - > thead, tbody, tr, th, td
+Непосредственно вложенные .table1 - > head, tbody */
+.table{
+    border: 1px solid;
+    border-collapse: collapse;
+    & th,
+    & td{
+        border: 1px solid;
+        padding: 5px;
+    }
+    &__def{
+        font-weight: 400;
+    }
+}

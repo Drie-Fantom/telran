@@ -1,0 +1,45 @@
+p{
+    /* background-color: red;
+    border: 2px solid blue;
+    /* border-radius: 20px; */
+    /* border-top-left-radius: 20px;
+    border-bottom: 10px solid darkgoldenrod;
+    border-top: none;
+    margin: 50px;
+    margin: 100px 10px;
+    margin: 0px 100px 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 66px;
+    padding: 20px;
+    padding: 0px 2px 3px 4px; */ 
+}
+
+.info__hoby{
+    background-color: green;
+    border: 5px dashed blue;
+    margin: 50px 20px;
+    padding: 50px;
+}
+.info__hoby h2{
+    width: 125px;
+    margin: 0 auto;
+}
+.info__work{
+    background-color: #a7288b;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+.info__friends{
+    background-color: #191b96;
+    border: 2px solid snow;
+    margin: 5px;
+    padding: 5px;
+}
+h1{
+    width: 125px;
+    text-align: center;
+    margin: 0px auto;
+}

@@ -1,0 +1,36 @@
+
+
+.h2__yellow{
+    color: yellow;
+}
+
+
+
+
+
+
+
+h4{
+    color: green;
+    background-color: black;
+}
+a{
+    color: purple;
+    background-color: sandybrown;
+    text-decoration: none;
+}
+.text__p{
+    color: green;
+    background-color: black;
+}
+.text__p-read{
+    color: red;
+    background-color: #1c3468;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
