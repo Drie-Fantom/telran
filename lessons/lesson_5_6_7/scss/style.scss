@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Inter;
-    font-weight: 400;  
+    font-weight: 400;
     letter-spacing: 0%;
-    color: #000; 
+    color: #000;
 }
 
 .header {
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &__menu {
         display: flex;
         justify-content: center;
@@ -29,8 +30,9 @@
         gap: 20px;
     }
 }
-.menu{
-    &__item{
+
+.menu {
+    &__item {
         font-size: 25px;
         line-height: 30.26px;
         letter-spacing: 0%;
@@ -44,11 +46,13 @@
         display: flex;
     }
 }
+
 .info {
 
     &__img {
         flex: 1;
-        & img{
+
+        & img {
             width: 100%;
             height: 100%;
         }
@@ -82,56 +86,59 @@
     padding: 124px 65px;
     background-color: #DCFFEB;
 }
+
 .progects {
 
-		&__title {
-            font-size: 35px;
-            line-height: 42.36px;
-		}
+    &__title {
+        font-size: 35px;
+        line-height: 42.36px;
+    }
 
-		&__items {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 37px;
-		}
+    &__items {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 37px;
+    }
 
-		&__item {
-            flex: 1;
-            background-image: url(./../imgs/img/Rectangle3.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            width: 436px;
-            height: 376px;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            padding: 36px;
-            padding-bottom: 10px;
-		}
+    &__item {
+        flex: 1;
+        background-image: url(./../imgs/img/Rectangle3.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 436px;
+        height: 376px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 36px;
+        padding-bottom: 10px;
+    }
 
-		&__text {
-            font-family: Open Sans;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 21.79px;
-            letter-spacing: 0%;
-            color: #fff;
-		}
+    &__text {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21.79px;
+        letter-spacing: 0%;
+        color: #fff;
+    }
 }
+
 .item {
-	&__title {
+    &__title {
         font-family: Oswald;
         font-weight: 500;
         font-size: 24px;
         line-height: 35.57px;
         color: #fff;
-	}
+    }
 }
 
 .footer {
     background-color: #fff;
+
     &__container {
         padding: 84px 69px 76px;
     }
@@ -155,6 +162,7 @@
         flex-direction: column;
     }
 }
+
 .block {
 
     &__img {
@@ -168,6 +176,7 @@
         font-size: 24px;
         line-height: 35.57px;
         text-align: center;
+        margin: 5px 0px;
     }
 
     &__text {
@@ -178,6 +187,7 @@
         text-align: center;
     }
 }
+
 .blcok {
 
     &__link {
