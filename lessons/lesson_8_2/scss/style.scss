@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 16px;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+
+.title {
+    width: 511px;
+    height: 260px;
+    padding: 69px 55px 55px 55px;
+
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 65px;
+    text-align: center;
+    color: #fff;
+    background-color: #87CEFA;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__label {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14.61px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #808080;
+    }
+
+    &__input {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 13.34px;
+        line-height: 16.15px;
+        letter-spacing: 0%;
+        color: #000;
+        padding: 9px 6px;
+        border: 1px solid #CCCCCC;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 5px;
+
+        &::placeholder {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 13.34px;
+            line-height: 16.15px;
+            letter-spacing: 0%;
+            color: #757575;
+        }
+    }
+
+    &__select {}
+
+    &__checkbox {}
+
+    &__texterea {}
+
+    &__button {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 15.38px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #fff;
+        padding: 10px 58px;
+        background-color: #3263CD;
+        width: min-content;
+        margin: 0px auto;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.block {
+
+    &__check-radio {}
+}
+
+.checkbox__block {
+    & .form__label {
+        color: #000;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+.radio__block {
+    & .form__label {
+        color: #000;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 13.02px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+}
