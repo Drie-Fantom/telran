@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  transition: all 2s ease;
+}
+.container:hover {
+  padding-left: 800px;
+}
+.container:hover .box {
+  transform: scale(2);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #709;
+  transition: all 2s ease;
+}
