@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Merriweather:wght@900&display=swap&subset=cyrillic");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  font-weight: 300;
+}
+
+body {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.subtitle {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33.12px;
+  letter-spacing: 0%;
+  color: #BDBDBD;
+}
+
+.title {
+  font-family: Merriweather;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 49.78px;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 140px 40px;
+  margin: 0px auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+}
+.header .container {
+  padding: 0px 40px;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0px;
+  height: 100px;
+}
+.header__logo {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+.header__logo img {
+  width: 40px;
+  height: 40px;
+}
+.header__title {
+  color: #005FA3;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 68px;
+  cursor: pointer;
+}
+
+.nav__item {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 1.4px;
+  color: #222222;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.services {
+  background-color: #EBEBEB;
+}
+.services__body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.services__content {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+.services__item {
+  min-height: 360px;
+  background-image: url("../imgs/img/Rectangle 2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 45px;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+.services__item:hover:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: rgba(0, 95, 163, 0.65);
+}
+.services__text {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30.24px;
+  letter-spacing: 0%;
+  color: #fff;
+  max-width: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+.about {
+  background-color: #fff;
+}
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+}
+.about__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about__title {
+  max-width: 350px;
+}
+.about__title span {
+  color: #005FA3;
+}
+.about__text {
+  margin-top: 20px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.84px;
+  letter-spacing: 0%;
+  color: #000000;
+  max-width: 445px;
+}
+.about__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 45%;
+}
+.about__info {
+  max-height: 255px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #EBEBEB;
+}
+.about__info:hover {
+  background-color: #005FA3;
+}
+.about__info:hover .info__title, .about__info:hover .info__subtitle, .about__info:hover .info__link .link {
+  color: #fff;
+}
+
+.info__title {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 5.5px;
+  color: #000000;
+}
+.info__subtitle {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18.48px;
+  letter-spacing: 0%;
+  color: #000;
+  max-width: 110px;
+}
+.info__link {
+  margin-top: 17px;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-offset: Auto;
+  text-decoration-thickness: Auto;
+  color: #005FA3;
+}
+
+.contacts {
+  background-image: url("../imgs/img/Rectangle.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contacts__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 100px;
+}
+.contacts__left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.contacts__title {
+  color: #FFFFFF;
+}
+.contacts__text {
+  color: #FFFFFF;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24.84px;
+  letter-spacing: 0%;
+  max-width: 445px;
+}
+.contacts__social {
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.contacts__social .link {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 28.98px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contacts__email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.form__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__item-textarea {
+  width: 100%;
+}
+.form__label {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 22.08px;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.form__input {
+  font-family: Lato;
+  font-size: 21px;
+  line-height: 28.98px;
+  letter-spacing: 0%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.form__input::-moz-placeholder {
+  font-family: Lato;
+  font-size: 21px;
+  line-height: 28.98px;
+  letter-spacing: 0%;
+  color: #BDBDBD;
+}
+.form__input::placeholder {
+  font-family: Lato;
+  font-size: 21px;
+  line-height: 28.98px;
+  letter-spacing: 0%;
+  color: #BDBDBD;
+}
+.form__textarea {
+  resize: none;
+  height: 105px;
+}
+.form__button {
+  margin-top: 15px;
+  margin-left: auto;
+  padding: 18px;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 24.84px;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: #005FA3;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #fff;
+}
+.footer .container {
+  padding: 70px 40px;
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__text {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 19.32px;
+  letter-spacing: 0%;
+  color: #000;
+}
