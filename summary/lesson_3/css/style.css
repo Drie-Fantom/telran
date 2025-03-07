@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  height: 40px;
+}
+header nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+header div {
+  background-color: #000;
+  border-right: 2px solid #fff;
+  padding: 10.5px;
+  height: 100%;
+  cursor: pointer;
+}
+header div:hover {
+  background-color: #fff;
+}
+header div:hover a {
+  color: #000;
+}
+header div a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  padding-top: 50px;
+}

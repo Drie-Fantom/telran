@@ -304,6 +304,7 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid #fff;
+  padding-bottom: 7px;
 }
 .form__input::-moz-placeholder {
   font-family: Lato;
