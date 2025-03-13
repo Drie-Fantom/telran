@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan";
+  font-weight: 300;
+  font-size: 32px;
+  color: #161515;
+}
+
+.wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.watch {
+  width: 100%;
+}
+.watch__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: #F8F8F8;
+  width: 100%;
+  padding: 104px 133px 168px 133px;
+}
+.watch__left {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.watch__subtitle {
+  font-size: 24px;
+}
+.watch__title {
+  color: #272727;
+  font-size: 250px;
+}
+.watch__text {
+  max-width: 575px;
+}
+.watch__buttons {
+  display: flex;
+  justify-content: start;
+}
+.watch__button {
+  padding: 26px 74px;
+  background-color: #161515;
+  color: #fff;
+}
+.watch__price {
+  background-color: #fff;
+  color: #272727;
+  padding: 28px;
+}
+.watch__right {
+  width: 408px;
+  height: 720px;
+  background-image: url(../imgs/img/1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.products__body {
+  padding: 43px 0px 142px;
+}
+.products__subtitle {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+.products__title {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
+  color: #000000;
+}
+.products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin-top: 85px;
+}
+.products__img {
+  width: 417px;
+  height: 630px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F8F8F8;
+}
+.products__img:nth-child(1) {
+  background-image: url(../imgs/img/2.png);
+}
+.products__img:nth-child(2) {
+  width: 496px;
+  height: 630px;
+  background-image: url(../imgs/img/3.png);
+}
+
+.container {
+  max-width: 530px;
+  padding: 0px 10px;
+}
+
+.item__title {
+  margin-top: 50px;
+  color: #000000;
+}
+.item__text {
+  text-align: center;
+  font-size: 24px;
+}
+.item__text span {
+  font-weight: 500;
+  color: #bf8a53;
+}
+.item__description {
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.item__description::after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  width: 178px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: #707070;
+}
