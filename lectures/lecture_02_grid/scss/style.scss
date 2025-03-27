@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerStyle {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.gridContainer {
+    background-color: lightgray;
+    border: 1px solid darkblue;
+    display: grid;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: aqua;
+}
+
+.box4 {
+    background-color: yellowgreen
+}
+
+.box5 {
+    background-color: green;
+}
+
+.box6 {
+    background-color: violet;
+}
+
+.box7 {
+    background-color: lightsalmon;
+}
+
+.box8 {
+    background-color: goldenrod
+}
+
+.box9 {
+    background-color: teal
+}
+
+// .experimentalGrid {
+//     display: grid;
+//     // 1
+//     grid-template-columns: repeat(3, 1fr);
+//     // 2
+//     grid-template-columns: 1fr 200px 1fr;
+//     // 3
+//     grid-template-columns: 4fr 2fr 1fr;
+// }
+
+// **Закрепим практикой (grid-template-rows)**
+// 1. Удалим все ограничения по высоте для наших цветных кубиков. Сделаем так, чтобы `div.experimentalGrid` отображался бы в виде сетки 3х3, при этом высота первой строки - 200 пикселей, второй - 250, а третьей - 300 пикселей.
+// 2. Для этого же блока, сделайте так, первая строка занимала 200 пикселей высоты, а вторая и третья - столько, сколько нужно их содержимому.
+// 3. Сделайте так, чтобы строки имели соотношение по высоте 3:2:1. Здесь рекомендуется добавить еще кое-что в стили контейнера, чтобы он понимал, доли от чего ему брать.
+// .experimentalGrid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     // 1
+//     grid-template-rows: 200px 250px 300px;
+//     // 2
+//     grid-template-rows: 200px auto auto;
+//     // 3
+//     grid-template-rows: 3fr 2fr 1fr;
+// }
+
+
+// **Закрепим практикой (grid-template-areas)**
+// 1. С помощью `grid-template-areas`, сделайте так, чтобы у нас была сетка из 3 столбцов, при этом первый элемент занимал полностью первую строку, второй - полностью вторую.
+// 2. С помощью `grid-template-areas`, сделайте сетку из 3 столбцов, чтобы 1-й элемент занимал полностью первую строку, второй занимал бы первый столбец во второй и третьей строках, третий занимал бы второй столбец во второй и третьей строках.
+.experimentalGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    & .gridItem:nth-child(1) {
+        grid-area: box1;
+    }
+
+    & .gridItem:nth-child(2) {
+        grid-area: box2;
+    }
+
+    & .gridItem:nth-child(3) {
+        grid-area: box3;
+    }
+
+    & .gridItem:nth-child(4) {
+        grid-area: box4;
+    }
+
+    & .gridItem:nth-child(5) {
+        grid-area: box5;
+    }
+
+
+    // 1
+    grid-template-areas: "box1 box1 box1"
+    "box2 box2 box2";
+
+
+    // 2
+    grid-template-areas: "box1 box1 box1"
+    "box2 box3 box4"
+    "box2 box3 box5";
+}
+
+// **Закрепим практикой (justify-items, align-items)**
+// 1. В контейнере `div.experimentalGrid`, добавьте всем кубикам ограничения по ширине и высоте (100 пикселей на 100 пикселей). Реализуйте шаблон сетки из 2 строк и 4 столбцов, строки высотой по 200 пикселей, столбцы все равной ширины. Сделайте так, чтобы содержимое ячеек было выровнено по центру по обеим осям.
+// 2. Теперь сделайте так, чтобы содержимое прижималось к правому нижнему углу ячеек.
+// .experimentalGrid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-rows: repeat(4, 200px);
+//     // 1
+//     justify-items: center;
+//     align-items: center;
+//     // 2
+//     justify-items: end;
+//     align-items: end;
+// }
+
+// **Закрепим практикой (justify-self, align-self)**
+// 1. В контейнере `div.experimentalGrid`, добавьте всем кубикам ограничения по ширине и высоте (100 пикселей на 100 пикселей). Реализуйте шаблон сетки из 3 строк и 3 столбцов, строки высотой по 200 пикселей, столбцы все равной ширины. Сделайте так, чтобы содержимое ячеек было выровнено по центру по обеим осям. Кубик с классом `box3` должен быть прижат к правому верхнему углу своей ячейки.
+// 2. Кубик с классом `box5` должен быть выровнен по центру по горизонтали, и прижат к нижнему краю по вертикали.
+// 3. Кубик с классом `bo4` должен быть выровнен по центру по вертикали, и прижат к правому краю по горизонтали.
+// .experimentalGrid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(3, 200px);
+//     justify-items: center;
+//     align-items: center;
+
+//     & .gridItem {
+//         width: 100px;
+//         height: 100px;
+//     }
+
+//     // 1
+//     & .gridItem:nth-child(3) {
+//         justify-self: end;
+//         align-self: start;
+//     }
+
+//     // 2
+//     & .gridItem:nth-child(5) {
+//         justify-self: end;
+//     }
+
+//     // 2
+//     & .gridItem:nth-child(4) {
+//         align-self: end;
+//     }
+// }
+
+
+// **Закрепим практикой (grid-column, grid-row)**
+// 1. В контейнере `div.experimentalGrid`, укажите шаблон сетки - 3 столбца равной ширины. Сделайте так, чтобы кубик с классом box2 занимал 2 и 3 столбцы первой строки.
+// 2. Кубик с классом box3 должен занимать всю вторую строку.
+// 3. Кубик с классом box4 должен занимать первый столбец третьей и четвертой строк.
+// 4. Кубик с классом box5 должен занимать второй и третий столбцы третьей и четвертой строк (то есть место, оставшееся от box4).
+// .experimentalGrid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+
+//     // 1
+//     & .gridItem:nth-child(2) {
+//         grid-column: 1/3;
+//         grid-row: 1/2;
+//     }
+
+//     // 2
+//     & .gridItem:nth-child(3) {
+//         grid-column: 1/4;
+//         grid-row: 2/3;
+//     }
+
+//     // 3
+//     & .gridItem:nth-child(4) {
+//         grid-column: 1/2;
+//         grid-row: 3/5;
+//     }
+
+//     // 4
+//     & .gridItem:nth-child(5) {
+//         grid-column: 2/4;
+//         grid-row: 4/5;
+//     }
+// }

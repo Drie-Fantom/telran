@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.headerStyle {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.gridContainer {
+  background-color: lightgray;
+  border: 1px solid darkblue;
+  display: grid;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box3 {
+  background-color: aqua;
+}
+
+.box4 {
+  background-color: yellowgreen;
+}
+
+.box5 {
+  background-color: green;
+}
+
+.box6 {
+  background-color: violet;
+}
+
+.box7 {
+  background-color: lightsalmon;
+}
+
+.box8 {
+  background-color: goldenrod;
+}
+
+.box9 {
+  background-color: teal;
+}
+
+.experimentalGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "box1 box1 box1" "box2 box2 box2";
+  grid-template-areas: "box1 box1 box1" "box2 box3 box4" "box2 box3 box5";
+}
+.experimentalGrid .gridItem:nth-child(1) {
+  grid-area: box1;
+}
+.experimentalGrid .gridItem:nth-child(2) {
+  grid-area: box2;
+}
+.experimentalGrid .gridItem:nth-child(3) {
+  grid-area: box3;
+}
+.experimentalGrid .gridItem:nth-child(4) {
+  grid-area: box4;
+}
+.experimentalGrid .gridItem:nth-child(5) {
+  grid-area: box5;
+}
